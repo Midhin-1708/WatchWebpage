@@ -1,17 +1,189 @@
 export const products = [
-  { id: 'v-101', name: 'Nocturne Chronograph', collection: 'Chronograph', price: 4850, oldPrice: 5200, year: '2026', material: 'Ceramic / Steel', strap: 'Italian leather', water: '100m', image: '/src/assets/images/collection-chronograph.webp', detail: 'A measured chronograph in ceramic and brushed steel, composed for late hours and long horizons.', featured: true },
-  { id: 'v-102', name: 'Meridian Diver', collection: 'Diver', price: 3950, oldPrice: null, year: '2026', material: 'Steel / Ceramic', strap: 'Steel bracelet', water: '300m', image: '/src/assets/images/collection-diver.webp', detail: 'A quiet instrument with a luminous dial and a bezel engineered for clarity below the surface.', featured: true },
-  { id: 'v-103', name: 'Atelier Heritage', collection: 'Heritage', price: 6250, oldPrice: 6900, year: '2025', material: '18k gold / Steel', strap: 'Alligator leather', water: '50m', image: '/src/assets/images/collection-heritage.webp', detail: 'A slim dress watch with a warm ivory dial and the restraint of a private collection.', featured: true },
-  { id: 'v-104', name: 'Obsidian Executive', collection: 'Executive', price: 5450, oldPrice: null, year: '2026', material: 'Brushed steel', strap: 'Italian leather', water: '100m', image: '/src/assets/images/collection-chronograph.webp', detail: 'A sharp, dark silhouette made for the boardroom and the last train home.' },
-  { id: 'v-105', name: 'Axis Sport', collection: 'Sport', price: 3200, oldPrice: null, year: '2025', material: 'Titanium', strap: 'Rubber', water: '200m', image: '/src/assets/images/collection-diver.webp', detail: 'Lightweight titanium and a high-contrast dial for motion without compromise.' },
-  { id: 'v-106', name: 'Lumen Classic', collection: 'Classic', price: 4100, oldPrice: null, year: '2024', material: 'Steel', strap: 'Calfskin leather', water: '50m', image: '/src/assets/images/collection-heritage.webp', detail: 'The essential VELARO profile: balanced, legible, and quietly distinctive.' },
-  { id: 'v-107', name: 'Vesper GMT', collection: 'Executive', price: 5700, oldPrice: null, year: '2026', material: 'Steel / Ceramic', strap: 'Steel bracelet', water: '100m', image: '/src/assets/images/collection-chronograph.webp', detail: 'A dual-time companion for arrivals, departures, and the space between.' },
-  { id: 'v-108', name: 'Tide Line', collection: 'Diver', price: 3650, oldPrice: null, year: '2025', material: 'Steel', strap: 'Steel bracelet', water: '200m', image: '/src/assets/images/collection-diver.webp', detail: 'A robust diver balanced with the polish of an atelier object.' },
-  { id: 'v-109', name: 'Serein 38', collection: 'Classic', price: 2850, oldPrice: null, year: '2024', material: 'Steel', strap: 'Suede leather', water: '50m', image: '/src/assets/images/collection-heritage.webp', detail: 'A compact, quiet classic made for close sleeves and considered gestures.' },
-  { id: 'v-110', name: 'Foundry 44', collection: 'Chronograph', price: 5100, oldPrice: null, year: '2026', material: 'Steel / Ceramic', strap: 'Leather', water: '100m', image: '/src/assets/images/collection-chronograph.webp', detail: 'A dark chronograph with a precise industrial edge.' },
-  { id: 'v-111', name: 'Horizon 42', collection: 'Sport', price: 3450, oldPrice: null, year: '2025', material: 'Titanium', strap: 'Rubber', water: '200m', image: '/src/assets/images/collection-diver.webp', detail: 'A measured sport watch for days that refuse to stay still.' },
-  { id: 'v-112', name: 'No. 02 Dress', collection: 'Heritage', price: 5900, oldPrice: null, year: '2024', material: '18k gold / Steel', strap: 'Alligator leather', water: '50m', image: '/src/assets/images/collection-heritage.webp', detail: 'A restrained gold accent for the archive-minded collector.' },
+  {
+    id: 'v-101',
+    name: 'Nocturne Chronograph',
+    collection: 'Chronograph',
+    price: 4850,
+    oldPrice: 5200,
+    year: '2026',
+    material: 'Ceramic / Steel',
+    strap: 'Italian leather',
+    water: '100m',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85',
+    detail: 'A measured chronograph in ceramic and brushed steel, composed for late hours and long horizons.',
+    featured: true
+  },
+
+  {
+    id: 'v-102',
+    name: 'Meridian Diver',
+    collection: 'Diver',
+    price: 3950,
+    oldPrice: null,
+    year: '2026',
+    material: 'Steel / Ceramic',
+    strap: 'Steel bracelet',
+    water: '300m',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=85',
+    detail: 'A quiet instrument with a luminous dial and a bezel engineered for clarity below the surface.',
+    featured: true
+  },
+
+  {
+    id: 'v-103',
+    name: 'Atelier Heritage',
+    collection: 'Heritage',
+    price: 6250,
+    oldPrice: 6900,
+    year: '2025',
+    material: '18k gold / Steel',
+    strap: 'Alligator leather',
+    water: '50m',
+    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85',
+    detail: 'A slim dress watch with a warm ivory dial and the restraint of a private collection.',
+    featured: true
+  },
+
+  {
+    id: 'v-104',
+    name: 'Obsidian Executive',
+    collection: 'Executive',
+    price: 5450,
+    oldPrice: null,
+    year: '2026',
+    material: 'Brushed steel',
+    strap: 'Italian leather',
+    water: '100m',
+    image: 'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=900&q=85',
+    detail: 'A sharp, dark silhouette made for the boardroom and the last train home.'
+  },
+
+  {
+    id: 'v-105',
+    name: 'Axis Sport',
+    collection: 'Sport',
+    price: 3200,
+    oldPrice: null,
+    year: '2025',
+    material: 'Titanium',
+    strap: 'Rubber',
+    water: '200m',
+    image: 'https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=900&q=85',
+    detail: 'Lightweight titanium and a high-contrast dial for motion without compromise.'
+  },
+
+  {
+    id: 'v-106',
+    name: 'Lumen Classic',
+    collection: 'Classic',
+    price: 4100,
+    oldPrice: null,
+    year: '2024',
+    material: 'Steel',
+    strap: 'Calfskin leather',
+    water: '50m',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85',
+    detail: 'The essential VELARO profile: balanced, legible, and quietly distinctive.'
+  },
+
+  {
+    id: 'v-107',
+    name: 'Vesper GMT',
+    collection: 'Executive',
+    price: 5700,
+    oldPrice: null,
+    year: '2026',
+    material: 'Steel / Ceramic',
+    strap: 'Steel bracelet',
+    water: '100m',
+    image: 'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=900&q=85',
+    detail: 'A dual-time companion for arrivals, departures, and the space between.'
+  },
+
+  {
+    id: 'v-108',
+    name: 'Tide Line',
+    collection: 'Diver',
+    price: 3650,
+    oldPrice: null,
+    year: '2025',
+    material: 'Steel',
+    strap: 'Steel bracelet',
+    water: '200m',
+    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=85',
+    detail: 'A robust diver balanced with the polish of an atelier object.'
+  },
+
+  {
+    id: 'v-109',
+    name: 'Serein 38',
+    collection: 'Classic',
+    price: 2850,
+    oldPrice: null,
+    year: '2024',
+    material: 'Steel',
+    strap: 'Suede leather',
+    water: '50m',
+    image: 'https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?auto=format&fit=crop&w=900&q=85',
+    detail: 'A compact, quiet classic made for close sleeves and considered gestures.'
+  },
+
+  {
+    id: 'v-110',
+    name: 'Foundry 44',
+    collection: 'Chronograph',
+    price: 5100,
+    oldPrice: null,
+    year: '2026',
+    material: 'Steel / Ceramic',
+    strap: 'Leather',
+    water: '100m',
+    image: 'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=85',
+    detail: 'A dark chronograph with a precise industrial edge.'
+  },
+
+  // {
+  //   id: 'v-111',
+  //   name: 'Horizon 42',
+  //   collection: 'Sport',
+  //   price: 3450,
+  //   oldPrice: null,
+  //   year: '2025',
+  //   material: 'Titanium',
+  //   strap: 'Rubber',
+  //   water: '200m',
+  //   image: 'https://images.unsplash.com/photo-1619946794135-5bc917a27793?auto=format&fit=crop&w=900&q=85',
+  //   detail: 'A measured sport watch for days that refuse to stay still.'
+  // },
+
+  {
+    id: 'v-112',
+    name: 'No. 02 Dress',
+    collection: 'Heritage',
+    price: 5900,
+    oldPrice: null,
+    year: '2024',
+    material: '18k gold / Steel',
+    strap: 'Alligator leather',
+    water: '50m',
+    image: 'https://images.unsplash.com/photo-1594534475808-b18fc33b045e?auto=format&fit=crop&w=900&q=85',
+    detail: 'A restrained gold accent for the archive-minded collector.'
+  }
 ];
 
-export const collections = ['All', 'Chronograph', 'Diver', 'Classic', 'Sport', 'Heritage', 'Executive'];
-export const money = (value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
+export const collections = [
+  'All',
+  'Chronograph',
+  'Diver',
+  'Classic',
+  'Sport',
+  'Heritage',
+  'Executive'
+];
+
+export const money = (value) =>
+  new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0
+  }).format(value);
