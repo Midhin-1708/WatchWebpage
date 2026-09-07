@@ -1,0 +1,3 @@
+import { Link } from 'wouter';
+import SectionTitle from '../components/SectionTitle';
+export default function Login(){return <section className="account-page"><div className="account-card"><div className="account-art"><img src="/src/assets/images/hero-watch.webp" alt="VELARO watch"/><h2>Time is<br/><em>personal.</em></h2></div><div className="account-form"><SectionTitle label="Welcome back"/><h1>Sign in.</h1><form onSubmit={e=>e.preventDefault()}><input required type="email" placeholder="Email address"/><input required type="password" placeholder="Password"/><button className="button button--brass button--wide">Sign in</button></form><p>New to VELARO? <Link href="/signup">Create an account</Link></p></div></div></section>}

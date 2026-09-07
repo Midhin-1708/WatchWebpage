@@ -1,0 +1,3 @@
+import Button from './Button';
+import { ArrowRight } from 'lucide-react';
+export default function Newsletter(){return <section className="newsletter section-pad"><div className="container newsletter-grid"><div><div className="section-label"><span className="section-label__mark"/>04 / Correspondence</div><h2>Keep close<br/><em>to the hour.</em></h2></div><form className="newsletter-form" onSubmit={e=>e.preventDefault()}><p>Receive considered notes from the atelier: new pieces, field notes, and private invitations.</p><div><input type="email" required placeholder="Your email address"/><Button>Subscribe <ArrowRight size={15}/></Button></div></form></div></section>}

@@ -1,0 +1,8 @@
+import { useMemo,useState } from 'react';
+import { ChevronDown } from 'lucide-react';
+import ProductGrid from '../components/ProductGrid';
+import FilterBar from '../components/FilterBar';
+import SearchBar from '../components/SearchBar';
+import SectionTitle from '../components/SectionTitle';
+import { collections,products } from '../data/products';
+export default function Watches(){const [active,setActive]=useState('All');const [query,setQuery]=useState('');const [sort,setSort]=useState('featured');const filtered=useMemo(()=>products.filter(p=>(active==='All'||p.collection===active)&&p.name.toLowerCase().includes(query.toLowerCase())).sort((a,b)=>sort==='low'?a.price-b.price:sort==='high'?b.price-a.price:a.id.localeCompare(b.id)),[active,query,sort]);return <section className="section-pad collection-page"><div className="container"><div className="page-intro"><SectionTitle label="Collection / 2026"/><h1>Objects of<br/><em>duration.</em></h1><p>Explore the current VELARO edit: references considered from case to clasp.</p></div><div className="collection-toolbar"><FilterBar filters={collections} active={active} onChange={setActive}/><div className="collection-tools"><SearchBar value={query} onChange={e=>setQuery(e.target.value)}/><label className="sort-field"><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value)}><option value="featured">Featured</option><option value="low">Price: low</option><option value="high">Price: high</option></select><ChevronDown size={14}/></label></div></div>{filtered.length?<ProductGrid products={filtered}/>:<div className="empty-state">No references match that search.</div>}</div></section>}

@@ -1,0 +1,5 @@
+import { Menu,ShoppingBag,UserRound,X } from 'lucide-react';
+import { Link } from 'wouter';
+import { useState } from 'react';
+import useCart from '../hooks/useCart';
+export default function Navbar(){const [open,setOpen]=useState(false);const {count}=useCart();return <header className="site-header site-header--solid"><Link href="/" className="wordmark"><span className="wordmark__symbol">V</span><span>VELARO</span></Link><nav className="desktop-nav"><Link href="/collection">Collection</Link><Link href="/#house">The House</Link><Link href="/#journal">Journal</Link></nav><div className="header-actions"><Link href="/account"><UserRound size={17}/></Link><Link href="/cart" className="cart-link"><ShoppingBag size={17}/>{count>0&&<span className="cart-badge">{count}</span>}</Link><button className="menu-trigger" onClick={()=>setOpen(!open)}>{open?<X size={20}/>:<Menu size={20}/>}</button></div>{open&&<nav className="mobile-menu"><Link href="/collection" onClick={()=>setOpen(false)}>Collection</Link><Link href="/#house" onClick={()=>setOpen(false)}>The House</Link><Link href="/account" onClick={()=>setOpen(false)}>Account</Link></nav>}</header>}

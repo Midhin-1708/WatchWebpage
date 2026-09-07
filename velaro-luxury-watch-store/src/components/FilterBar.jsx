@@ -1,0 +1,1 @@
+export default function FilterBar({filters,active,onChange}){return <div className="collection-filters">{filters.map(filter=><button key={filter} className={active===filter?'filter-chip active':'filter-chip'} onClick={()=>onChange(filter)}>{filter}</button>)}</div>}
